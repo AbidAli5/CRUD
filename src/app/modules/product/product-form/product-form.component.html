@@ -1,0 +1,73 @@
+<div class="container">
+  <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+    <mat-form-field>
+      <input matInput placeholder="ID" formControlName="id" />
+    </mat-form-field>
+    <ng-container
+      *ngIf="
+        productForm.get('id')?.hasError('required') &&
+        productForm.get('id')?.touched
+      "
+    >
+      <p class="text-danger">ID is required</p>
+    </ng-container>
+
+    <mat-form-field>
+      <input matInput placeholder="Name" formControlName="name" />
+    </mat-form-field>
+    <ng-container
+      *ngIf="
+        productForm.get('name')?.hasError('required') &&
+        productForm.get('name')?.touched
+      "
+    >
+      <p class="text-danger">Name is required</p>
+    </ng-container>
+    <mat-form-field>
+      <textarea
+        matInput
+        placeholder="Description"
+        formControlName="description"
+      ></textarea>
+    </mat-form-field>
+    <ng-container
+      *ngIf="
+        productForm.get('description')?.hasError('required') &&
+        productForm.get('description')?.touched
+      "
+    >
+      <p class="text-danger">Description is required</p>
+    </ng-container>
+    <mat-form-field>
+      <input
+        matInput
+        type="number"
+        placeholder="Price"
+        formControlName="price"
+      />
+    </mat-form-field>
+    <ng-container
+      *ngIf="
+        productForm.get('price')?.hasError('required') &&
+        productForm.get('price')?.touched
+      "
+    >
+      <p class="text-danger">Price is required</p>
+    </ng-container>
+    <mat-form-field>
+      <input matInput placeholder="Category" formControlName="category" />
+    </mat-form-field>
+    <ng-container
+      *ngIf="
+        productForm.get('category')?.hasError('required') &&
+        productForm.get('category')?.touched
+      "
+    >
+      <p class="text-danger">Category is required</p>
+    </ng-container>
+
+    <button mat-raised-button color="primary" type="submit">
+      {{ btnText }}
+    </button>
+  </form>
+</div>

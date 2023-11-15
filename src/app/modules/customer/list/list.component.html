@@ -1,0 +1,59 @@
+<div class="container">
+    <div class="table-top">
+      <mat-form-field>
+        <mat-label>Search</mat-label>
+        <input
+          matInput
+          (keyup)="applyFilter($event)"
+          placeholder="Ex. Mia"
+          #input
+        />
+      </mat-form-field>
+      <button mat-fab extended color="primary" routerLink="form"  >
+        <mat-icon>add</mat-icon>
+        Add Customer
+      </button>
+    </div>
+    <div class="mat-elevation-z8">
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+        <ng-container *ngFor="let column of displayedColumns">
+          <ng-container matColumnDef="{{ column }}">
+            <th mat-header-cell *matHeaderCellDef>{{ column | uppercase }}</th>
+            <ng-container *ngIf="column !== 'actions'">
+              <td mat-cell *matCellDef="let element">{{ element[column] }}</td>
+            </ng-container>
+            <ng-container *ngIf="column === 'actions'">
+              <td mat-cell *matCellDef="let element">
+                <button
+                  mat-icon-button
+                  color="primary"
+                  (click)="editCustomr(element.id)"
+                  >
+                  <!-- (click)="editProduct(element.id)" -->
+                  <!-- [routerLink]="['/product/form',element.id]" -->
+                  <mat-icon>edit</mat-icon>
+                </button>
+                <button
+                  mat-icon-button
+                  color="warn"
+                  (click)="deleteCustomer(element.id)"
+                  >
+                  <!-- (click)="deleteProduct(element.id)" -->
+                  <mat-icon>delete</mat-icon>
+                </button>
+              </td>
+            </ng-container>
+          </ng-container>
+        </ng-container>
+  
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+      </table>
+  
+      <mat-paginator
+        [pageSizeOptions]="[5, 10, 25, 100]"
+        aria-label="Select page of users"
+      ></mat-paginator>
+    </div>
+  </div>
+  

@@ -1,0 +1,310 @@
+{
+  "customers": [
+    {
+      "first_name": "Emily Addelson",
+      "last_name": "Wilson",
+      "email": "emily@example.com",
+      "phone": "456-789-1234",
+      "address": {
+        "street": "987 Pine Road",
+        "city": "Smalltown",
+        "state": "FL",
+        "zip_code": "54321"
+      },
+      "id": 4
+    },
+    {
+      "id": 5,
+      "first_name": "Michael",
+      "last_name": "Brown",
+      "email": "michael@example.com",
+      "phone": "111-222-3333",
+      "address": {
+        "street": "321 Cedar Lane",
+        "city": "Villagetown",
+        "state": "IL",
+        "zip_code": "67890"
+      }
+    },
+    {
+      "id": 6,
+      "first_name": "Samantha",
+      "last_name": "Davis",
+      "email": "samantha@example.com",
+      "phone": "777-888-9999",
+      "address": {
+        "street": "456 Birch Street",
+        "city": "Smallville",
+        "state": "WA",
+        "zip_code": "23456"
+      }
+    },
+    {
+      "id": 7,
+      "first_name": "William",
+      "last_name": "Miller",
+      "email": "william@example.com",
+      "phone": "333-444-5555",
+      "address": {
+        "street": "987 Oak Avenue",
+        "city": "Metrocity",
+        "state": "NY",
+        "zip_code": "34567"
+      }
+    },
+    {
+      "id": 8,
+      "first_name": "Olivia",
+      "last_name": "Lee",
+      "email": "olivia@example.com",
+      "phone": "222-333-4444",
+      "address": {
+        "street": "654 Elm Street",
+        "city": "Newtown",
+        "state": "CA",
+        "zip_code": "45678"
+      }
+    },
+    {
+      "id": 9,
+      "first_name": "James",
+      "last_name": "Smith",
+      "email": "jamessmith@example.com",
+      "phone": "888-999-0000",
+      "address": {
+        "street": "789 Maple Road",
+        "city": "Rivercity",
+        "state": "TX",
+        "zip_code": "56789"
+      }
+    },
+    {
+      "id": 10,
+      "first_name": "Ava",
+      "last_name": "Taylor",
+      "email": "ava@example.com",
+      "phone": "777-777-7777",
+      "address": {
+        "street": "123 Pine Lane",
+        "city": "Hometown",
+        "state": "IL",
+        "zip_code": "34567"
+      }
+    },
+    {
+      "id": 11,
+      "first_name": "Ethan",
+      "last_name": "Anderson",
+      "email": "ethan@example.com",
+      "phone": "555-555-5555",
+      "address": {
+        "street": "456 Cedar Road",
+        "city": "Countryside",
+        "state": "WA",
+        "zip_code": "43210"
+      }
+    },
+    {
+      "id": 12,
+      "first_name": "Mia",
+      "last_name": "Moore",
+      "email": "mia@example.com",
+      "phone": "444-444-4444",
+      "address": {
+        "street": "789 Birch Street",
+        "city": "Villagetown",
+        "state": "NY",
+        "zip_code": "34567"
+      }
+    },
+    {
+      "id": 13,
+      "first_name": "Liam",
+      "last_name": "Wilson",
+      "email": "liam@example.com",
+      "phone": "666-666-6666",
+      "address": {
+        "street": "123 Cedar Lane",
+        "city": "Cityville",
+        "state": "CA",
+        "zip_code": "98765"
+      }
+    },
+    {
+      "id": 14,
+      "first_name": "Sophia",
+      "last_name": "Johnson",
+      "email": "sophia@example.com",
+      "phone": "333-333-3333",
+      "address": {
+        "street": "456 Elm Road",
+        "city": "Townsville",
+        "state": "TX",
+        "zip_code": "23456"
+      }
+    },
+    {
+      "id": 15,
+      "first_name": "Noah",
+      "last_name": "Martinez",
+      "email": "noah@example.com",
+      "phone": "222-222-2222",
+      "address": {
+        "street": "789 Pine Street",
+        "city": "Smalltown",
+        "state": "IL",
+        "zip_code": "87654"
+      }
+    },
+    {
+      "id": 16,
+      "first_name": "Ava",
+      "last_name": "Clark",
+      "email": "avaclark@example.com",
+      "phone": "777-777-7777",
+      "address": {
+        "street": "123 Oak Road",
+        "city": "Suburbia",
+        "state": "NY",
+        "zip_code": "12345"
+      }
+    },
+    {
+      "id": 17,
+      "first_name": "Logan",
+      "last_name": "Harris",
+      "email": "logan@example.com",
+      "phone": "999-999-9999",
+      "address": {
+        "street": "456 Maple Lane",
+        "city": "Villagetown",
+        "state": "CA",
+        "zip_code": "34567"
+      }
+    },
+    {
+      "id": 18,
+      "first_name": "Amelia",
+      "last_name": "Young",
+      "email": "amelia@example.com",
+      "phone": "888-888-8888",
+      "address": {
+        "street": "789 Cedar Street",
+        "city": "Smallville",
+        "state": "TX",
+        "zip_code": "65432"
+      }
+    },
+    {
+      "id": 19,
+      "first_name": "Lucas",
+      "last_name": "Allen",
+      "email": "lucas@example.com",
+      "phone": "666-666-6666",
+      "address": {
+        "street": "123 Elm Lane",
+        "city": "Hometown",
+        "state": "IL",
+        "zip_code": "23456"
+      }
+    },
+    {
+      "id": 20,
+      "first_name": "Lily",
+      "last_name": "King",
+      "email": "lily@example.com",
+      "phone": "555-555-5555",
+      "address": {
+        "street": "456 Pine Road",
+        "city": "Townsville",
+        "state": "WA",
+        "zip_code": "98765"
+      }
+    }
+  ],
+  "products": [
+    {
+      "name": "Refrigerator",
+      "description": "Stainless steel refrigerator with adjustable shelves and ice maker.",
+      "price": 1000,
+      "category": "Appliances",
+      "id": 12
+    },
+    {
+      "id": 13,
+      "name": "Tablet",
+      "description": "10-inch tablet with a high-resolution display and long battery life.",
+      "price": 299.99,
+      "category": "Electronics"
+    },
+    {
+      "id": 14,
+      "name": "Robot Vacuum",
+      "description": "Smart robot vacuum for automated cleaning of floors.",
+      "price": 249.99,
+      "category": "Appliances"
+    },
+    {
+      "id": 15,
+      "name": "Gaming Console",
+      "description": "Next-gen gaming console with powerful graphics and gaming library.",
+      "price": 499.99,
+      "category": "Gaming"
+    },
+    {
+      "id": 16,
+      "name": "Dishwasher",
+      "description": "Built-in dishwasher with multiple wash cycles and energy-efficient design.",
+      "price": 399.99,
+      "category": "Appliances"
+    },
+    {
+      "id": 17,
+      "name": "Wireless Router",
+      "description": "High-speed wireless router for fast and reliable internet connectivity.",
+      "price": 79.99,
+      "category": "Electronics"
+    },
+    {
+      "id": 18,
+      "name": "Fitness Tracker",
+      "description": "Fitness tracker with step counting and heart rate monitoring.",
+      "price": 59.99,
+      "category": "Wearables"
+    },
+    {
+      "id": 19,
+      "name": "Coffee Grinder update",
+      "description": "Electric coffee grinder for freshly ground coffee beans.",
+      "price": 30,
+      "category": "Appliances"
+    },
+    {
+      "id": 20,
+      "name": "Outdoor Grill",
+      "description": "Gas grill for outdoor cooking and barbecues.",
+      "price": 199.99,
+      "category": "Outdoor"
+    },
+    {
+      "id": "21",
+      "name": "Abid",
+      "description": "this new variety of market",
+      "price": 12345676543,
+      "category": "human"
+    },
+    {
+      "id": "22",
+      "name": "Abid",
+      "description": "this new variety of market",
+      "price": 12345676543,
+      "category": "human"
+    },
+    {
+      "id": "34",
+      "name": "343434",
+      "description": "34343343",
+      "price": 564564
+    }
+  ]
+}

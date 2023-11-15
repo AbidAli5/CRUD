@@ -1,0 +1,98 @@
+<div class="contianer">
+  <h3 class="text-center mt-3">Customer Form</h3>
+  <form
+    [formGroup]="customerForm"
+    (ngSubmit)="onSubmit()"
+    class="form-container"
+  >
+    <div class="row">
+      <div class="col-md-4">
+        <mat-form-field class="form-field">
+          <input matInput placeholder="ID" formControlName="id" />
+        </mat-form-field>
+        <ng-container
+          *ngIf="
+            customerForm.get('id')?.hasError('required') &&
+            customerForm.get('id')?.touched
+          "
+        >
+          <p class="text-danger">ID is required</p>
+        </ng-container>
+      </div>
+      <div class="col-md-4">
+        <mat-form-field class="form-field">
+          <input
+            matInput
+            placeholder="First Name"
+            formControlName="first_name"
+          />
+        </mat-form-field>
+        <ng-container
+          *ngIf="
+            customerForm.get('fist_name')?.hasError('required') &&
+            customerForm.get('first_name')?.touched
+          "
+        >
+          <p class="text-danger">First Name is required</p>
+        </ng-container>
+      </div>
+      <div class="col-md-4">
+        <mat-form-field class="form-field">
+          <input matInput placeholder="Last Name" formControlName="last_name" />
+        </mat-form-field>
+        <ng-container
+          *ngIf="
+            customerForm.get('last_name')?.hasError('required') &&
+            customerForm.get('last_name')?.touched
+          "
+        >
+          <p class="text-danger">Last Name is required</p>
+        </ng-container>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-4">
+        <mat-form-field class="form-field">
+          <input matInput placeholder="Email" formControlName="email" />
+        </mat-form-field>
+        <ng-container
+          *ngIf="
+            customerForm.get('email')?.hasError('required') &&
+            customerForm.get('email')?.touched
+          "
+        >
+          <p class="text-danger">Email is required</p>
+        </ng-container>
+      </div>
+
+      <div class="col-md-4">
+        <mat-form-field class="form-field">
+          <input matInput placeholder="Phone" formControlName="phone" />
+        </mat-form-field>
+        <ng-container
+          *ngIf="
+            customerForm.get('phone')?.hasError('required') &&
+            customerForm.get('phone')?.touched
+          "
+        >
+          <p class="text-danger">Phone Number is required</p>
+        </ng-container>
+      </div>
+      <div class="col-md-4">
+        <mat-form-field class="form-field">
+          <input matInput placeholder="Address" formControlName="address" />
+        </mat-form-field>
+
+        <ng-container
+          *ngIf="
+            customerForm.get('address')?.hasError('required') &&
+            customerForm.get('address')?.touched
+          "
+        >
+          <p class="text-danger">Address is required</p>
+        </ng-container>
+      </div>
+    </div>
+    <button mat-raised-button color="primary" type="submit">Submit</button>
+  </form>
+</div>
